@@ -1,0 +1,92 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+.container-info{
+  margin-top: 2rem;
+  padding: 10px;
+  border: 5px solid rgba(3, 33, 97, 0.966);
+  border-radius:10px;
+  background-color:rgba(3, 33, 97, 0.587);
+}
+
+.img_nasa{
+    max-width:90%;
+    margin: 15px 0px 15px 0px;
+}
+
+.title{
+    color:rgba(255, 255, 255, 0.853);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.body_text{
+    color:rgba(255, 255, 255, 0.853);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.container_img{
+    display: flex;
+    justify-content:center;
+}
+
+.card-container{
+  display:none;
+}
+
+.card-desktop{
+  display:none;
+}
+
+/*Media Queries for mobile*/
+@media only screen and (max-width: 576px)  {
+    .card-container{
+      display:flex; 
+      color:rgb(4, 12, 59); 
+    }
+    .card{
+      background-color:rgba(255, 255, 255, 0.757);
+    }
+
+    .container-info{
+      display:none;
+    }
+    .card-desktop{
+      display:none;
+    }
+}
+
+/*Media Queries for tablet*/
+@media only screen and (max-width: 768px)  {
+  .card-container{
+    display:flex; 
+    color:rgb(4, 12, 59); 
+  }
+  .card{
+    background-color:rgba(255, 255, 255, 0.757);
+  }
+
+  .container-info{
+    display:none;
+  }
+  .card-desktop{
+    display:none;
+  }
+}
+
+/*Media Queries for desktop small*/
+@media only screen and (max-width: 992px){
+  .container-info{
+    display:none;
+  }
+  .card-desktop{
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    background-color:rgba(255, 255, 255, 0.757);
+    padding:15px;
+  }
+  .card-img-top{
+    height: 250px;
+  }
+}

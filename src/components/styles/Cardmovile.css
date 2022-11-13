@@ -1,0 +1,17 @@
+/*Media Queries for tablet*/
+@media only screen and (max-width: 768px)  {
+    .card-container{
+      display:flex; 
+      color:rgb(4, 12, 59); 
+    }
+    .card{
+      background-color:rgba(255, 255, 255, 0.757);
+    }
+  
+    .container-info{
+      display:none;
+    }
+    .card-desktop{
+      display:none;
+    }
+  }
